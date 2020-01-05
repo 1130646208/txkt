@@ -1,0 +1,41 @@
+<head>
+<style>
+/*
+input:enabled/disabled/checked{}选择所有使能的标签
+比如<input type='text' disabled> 不会被选中
+p::selection{background:red;}
+*/
+	section{
+		background:#ccc;
+		height:0;
+		width:300px;
+		margin:0 auto;
+	}
+	section:target{
+		background:#f90;
+		height:50px;
+		transition:1s;/*过渡时间*/
+	}/*点击之后变色*/
+	a{
+		display:block;
+		text-align;:center;
+	}
+	a::selection{
+		color:#f80;
+	}
+</style>
+</head>
+
+<body>
+	<a href='#box1'>section1</a>
+	<section id='box1'></section>
+	<a href='#box2'>section2</a>
+	<section id='box2'></section>
+	<a href='#box3'>section3</a>
+	<section id='box3'></section>
+	<a href='#box4'>section4</a>
+	<section id='box4'></section>
+
+
+</body>
+

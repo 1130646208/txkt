@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>导航2</title>
+		<style>
+		/*背景图切图遵循最小原则*/
+			*{
+				margin:0;
+				padding:0;
+			}
+			ul{
+				width:500px;
+				height:44px;
+				margin:0 auto;
+				background:url('image/nav_2.png') repeat-x center bottom;
+			}
+			li{
+				list-style:none;
+				float:left;
+				
+			}
+			a{
+				height:44px;
+				text-decoration:none;
+				padding:0 15px;
+				-display:block;/*1.使宽高生效*/
+				float:left;/*2.当行间元素浮动时会转化成行内块元素,支持宽高*/
+				
+				line-height:44px;
+				color:#6f737e;
+			}
+			a:hover{
+				background:url('image/nav_2_hover.png') repeat-x ;
+				color:#fff;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		<ul>
+			<li>
+				<a href="#">sample</a>
+			</li>
+			<li>
+				<a href="#">sample</a>
+			</li>
+			<li>
+				<a href="#">sample</a>
+			</li>
+			<li>
+				<a href="#">sample</a>
+			</li>
+			<li>
+				<a href="#">sample</a>
+			</li>
+		</ul>
+		
+	</body>
+</html>

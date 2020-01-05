@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>表格</title>
+		<style>
+		/*
+		table:
+			border-collapse:collapse;相邻边框合并(细线表格)seprate(默认值)
+			border:1px double red;双线表格
+			border:5px solid red;改变边框宽度会导致表格单元格大小不一,seprate即可
+			宫字表格:将table下的border相关属性去掉,加上border-spacing:20px即可
+			日历表格:加padding属性和border-spacing属性
+			empty-cells:hide;隐藏空单元格.&nbsp;这个不算空
+			table-layout:fixed;单元不会被内容撑开但是仍受width影响.auto默认自动调整
+	
+		td:
+			单线表格:border-bottom:1px solid red
+			
+		怎么删除中间单元格?
+			给所有单元格加上&nbsp;然后给table加属性:empty-cells:hide;
+			
+		
+		*/
+			table{
+				width:400px;
+				height:200px;
+				border:5px solid red;
+				margin:100px auto;
+				padding:10px;
+				border-spacing:2px;
+				
+				
+			}
+			
+			td{
+				background:blue;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<table cellpadding='0' cellspacing='0'>
+			<caption>大标题</caption>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		
+	</body>
+</html>

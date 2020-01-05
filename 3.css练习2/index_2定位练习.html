@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>定位练习,图片放大</title>
+		<style>
+			*{margin:0;padding:0;}
+			div{
+				width:150px;
+				height:200px;
+				border:1px solid red;
+				margin:30px auto;
+				position:relative;
+				float:left;
+				
+			}
+			img{
+				height:200px;
+				width:150px;
+			}
+			
+			div img:hover{
+				width:300px;
+				height:400px;
+				position:absolute;
+				left:-75px;
+				top:-100px;
+				z-index:1;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div>
+			<img src="img/pic_1.jpg">
+		</div>
+		<div>
+			<img src="img/pic_2.jpg">
+		</div>
+		<div>
+			<img src="img/pic_3.jpg">
+		</div>
+		<div>
+			<img src="img/pic_4.jpg">
+		</div>
+	</body>
+
+
+
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS常用属性2</title>
+		<style>
+		/*
+		font-weight:bolder/bold:加粗,normal:正常字体,比如让b标签的字体恢复正常.
+				100-900:100-500不加粗,500-900加粗
+		font-style:normal不倾斜,italic/oblique倾斜
+		text-align:center文本水平居中,left,right左右.justify两端对齐
+		line-height:行高,一行文字顶端到下一行文字顶端.
+		text-indent:2em,缩进两个字符.
+		text-decoration:none去除下划线,underline下划线overline上划线line-through删除线
+		*/
+			#div1{
+			height:100px;
+			width:350px;
+			background:#ccc;
+			font-family:'微软雅黑';
+			font-size:'32px';
+			font-weight:normal;
+			color:#9FF;
+			
+			}
+			b{
+			font-weight:normal;
+			}
+			i{
+			font-style:normal;
+			}
+			#div2{
+			height:100px;
+			width:350px;
+			background:#CCC;
+			
+			line-height:5em;
+			text-indent:2em;
+			
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">我是一段文字,div标签.
+			<b>我是一段文字,b标签.</b><br/>
+			<i>我是一段文字,i标签.</i><br/>
+		</div>
+		<div id="div2">
+			<p>我是一段文字,p标签.我是一段字,p标签.我是一段文字,p标签.我是一段字,p标签.</p>
+		</div>
+		
+	</body>
+</html>

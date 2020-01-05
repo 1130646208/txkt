@@ -1,0 +1,10 @@
+层级选择器
+section>div{}只向内匹配一层
+section+div{}只匹配同级与sectioin紧邻的div
+section~div{}section标签下的所有div标签都被选中
+
+
+input:checked+label{
+background:red;}
+
+<input type='checkbox' /><label>aa</label>

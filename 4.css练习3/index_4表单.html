@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>表单</title>
+		<style>
+			form{
+				height:300px;
+				width:400px;
+				border:1px solid red;
+				margin:100px auto;
+			}
+			fieldset{
+				border:0;
+				border-bottom:1px solid blue;
+			}
+			p{margin-left:10px;}
+		</style>
+		
+	</head>
+	<body>
+		<form action='' method='' name=''>
+			<fieldset>
+				<legend>个人信息</legend>
+			</fieldset>
+				<p>
+					<label for='name'>姓名*</label><input id='name' type='text' name='name' value=''/>
+				</p>
+				<p>
+					<label for='address'>地址*</label><input id='address' type='text' name='name' value=''/>
+				</p>
+				<p>
+					<label>爱好*</label>
+					<input type='checkbox' name='' value='' id='ball1'/><label for='ball1'>篮球</label>
+					<input type='checkbox' name='' value='' id='ball2'/><label for='ball2'>足球</label>
+					<input type='checkbox' name='' value='' id='ball3'/><label for='ball3'>排球</label>
+					
+				</p>
+				
+				<input type='file' name='' multiple='multiple'/>
+			<fieldset>
+				<legend>其它信息</legend>
+			</fieldset>
+			
+		</form>
+		
+	</body>
+</html>

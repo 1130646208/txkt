@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<title>html5 css3练习</title>
+	<style>
+		div[title]{
+			height:92px;
+			width:90px;
+			background:blue;
+		}
+		div{
+			height:92px;
+			width:90px;
+			background:red;
+		}
+		div[title='test']{
+			height:92px;
+			width:94px;
+			background:cyan;
+		}
+		/*找到title属性中值有find的*/
+		div[title~='find']{
+			background:#888;
+		}
+		/*找到title属性中值te开头的*/
+		div[title^='te']{
+			background:#f90;
+		}
+		/*找到title属性中值2结尾的*/
+		div[title$='2']{
+			background:#f38;
+		}
+		/*找到title属性中值含有es的*/
+		div[title*='es']{
+			background:#e43;
+		}
+		/*找到title属性中值find开头或者find-开头的*/
+		div[title|='find']{
+			background:red;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<div title='test1'></div>
+	<div title='test-find'></div>
+	<div title='find-'></div>
+	<div title=''></div>
+</body>
+	
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<meta charset="utf-8"/>
+		<title>包含选择器</title>
+		<style>
+		/*包含选择器用的非常多
+		父元素选择器 子元素选择器 {css代码}*/
+			div{
+			height:200px;
+			width:100px;
+			}
+			.up{
+			background:tomato;
+			}
+			.down{
+			background:pink;}
+			.up div{
+			height:50px;
+			width:50px;
+			background:yellow;}
+			.down div{
+			height:50px;
+			width:50px;
+			background:yellow;
+			}
+			.up div p{
+			height:20px;
+			width:50px;
+			background:green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="up">
+			<div>
+				<p/>
+			</div>
+		</div>
+			
+		<div class="down">
+			<div>
+			
+			</div>
+		</div>
+	</body>
+</html>

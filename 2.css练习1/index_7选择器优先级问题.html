@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<meta charset="utf-8" />
+		<title>css选择器优先级问题</title>
+		<style>
+		/*行间样式>id选择器>class选择器>标签选择器*/
+		
+			.box .cell #para{height:100px;width:100px;background:red;}
+			div .cell .para{height:100px;width:100px;background:black;}
+		</style>
+	</head>
+	<body>
+		<div id="box" class="box">
+			<div id="cell" class="cell">
+				<p id="para" class="para">👍</p>
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+一.父元素属性:
+display:flex/inline-flex;使子元素便横向排列,并且不会高度塌陷
+	flex-direction:row/row-reverse/column/column-reverse 子元素怎么排列.改变轴方向从哪边开始排列
+	flex-wrap:no-wrap/wrap/wrap-reverse 当弹性盒不够大小,子元素是否换行
+	justify-content:flex-start/flex-end/center/space-between/space-around 子元素对齐方式
+	align-items:flex-start/flex-end/center/baseline/strech 侧轴对齐方式(start:元素紧贴侧轴起始.baseline,所有文字在同一基线.strech:拉伸子元素)
+	align-content:flex-start/flex-end/center/space-between/space-around/strech 用于修改flex-wrap的属性.类似于justify-content,但是不是设置子元素的对齐而是各个行的对齐
+二.子元素属性:
+flex-grow:0(不分配(默认))/正值(分配).
+	示例
+	.box1{flex-grow:1;}
+	.box2{flex-grow:2;}
+	则box1和2按照1:2分配父元素多余空间
+flex-shrink:0(不分配(默认))/正值(分配).
+	.box1{flex-shrink:2;}
+	.box2{flex-shrink:1;}
+	假设:box1宽度80,box2宽度160,父元素宽度200
+	超出:40
+	求加权总和:80*2+160*1=320
+	.box1被移除比例:80*2/320*40=20
+	.box1最终宽度:80-20=60
+	.box2最终宽度:140
+flex-basis:length(percent)/auto 设置或者检索弹性盒伸缩基准
+flex:用于合并指定flex-grow和flex-shrink和flex-basis.默认值为:0 1 auto.
+	如果缩写flex:1,则算(1 1 0);auto等价1 1 auto;none等价 0 0 auto
+
+order:整数,数值小的排在前面.
+
+align-self:auto/flex-start/flex-end/center/baseline/strech
+	设置弹性元素自身在侧轴方向上的对齐方式.

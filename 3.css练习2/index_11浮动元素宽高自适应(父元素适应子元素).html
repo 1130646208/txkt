@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>高度自适应实战</title>
+		<style>
+		/*
+		高度塌陷:子元素有浮动,父元素没有设置高度或者这只最小高度时,出现
+			不浮动时,left和right可以将box撑开
+			浮动时,不能撑开.
+		解决方案:
+			1.父元素添加overflow:hidden;
+			overflow:hidden;会触发BFC,在BFC中浮动元素也会增加高度
+			缺点:会隐藏定位元素超出部分
+				
+			2.在浮动元素同级添加空白块标签,并且设置样式clear:both;
+				缺点:浮动元素很多需要添加多个空白标签
+		*/
+		*{
+			margin:0;
+			padding:0;
+		}
+		.box{
+			width:1000px;
+			min-height:300px;
+			background:red;
+			margin:0 auto;
+		}
+		.left{
+			width:300px;
+			height:200px;
+			background:tomato;
+			
+			
+		}
+		.right{
+			height:200px;
+			width:300px;
+			background:pink;
+		}
+		</style>
+		
+	</head>
+	<body>
+		<div class="box">
+			<div class="left"></div>
+			<div class="right"></div>
+
+		</div>
+		
+	</body>
+</html>

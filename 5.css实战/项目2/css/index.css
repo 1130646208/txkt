@@ -1,0 +1,76 @@
+/**/
+.top_box{
+	width:1082px;
+	height:91px;
+	
+	margin:0 auto;
+	
+}
+.top_box .logo{
+	width:162px;
+	height:44px;
+	padding-top:19px;
+	float:left;
+	
+}
+
+.top_box .nav{
+	float:right;
+}
+
+.top_box .nav li{
+	float:left;
+}
+.top_box .nav li a{
+	font-size:14px;
+	color:#646464;
+	padding:0 27px;
+	line-height:81px;
+}
+.banner{
+	height:469px;
+	width:100%;
+	background:red url('../img/banner.png') no-repeat center;
+}
+.banner .banner_btn{
+	display:block;
+	height:469px;
+	
+}
+
+.service{
+	width:1082px;
+	height:407px;
+	_height:407px;
+	background:pink;
+	margin:0 auto;
+}
+.service h2{
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	
+	line-height:20px;
+	color:#363636;
+}
+.service h3{
+	font-size:14px;
+	text-align:center;
+	
+	line-height:14px;
+	color:#9f9f9f;
+	
+}
+
+.case .more{
+	font-size:14px;
+	color:#fff;
+	display:block;
+	width:176px;
+	height:37px;
+	text-align:center;
+	line-height:37px;
+	background:#66c5b4;
+	margin:0 auto;
+	border-radius:37px;/*圆角*/
+}

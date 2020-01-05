@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>双倍浮向</title>
+		<style>
+			/*
+			1.当ie6或者更低版本解析浮动元素时,会错误 的把浮动编剧加倍
+				hack:给所有浮动元素加上声明,display:inline;
+			2.在ie6及以下版本中,部分块元素默认高度低于20px
+				hack:给元素天计算生命font-size:0;或者overflow:hidden;
+			3.各个浏览器中按钮大小不一致
+				hack:统一大小,用a标签模拟;或者在input上把边框去掉(outline:none;border:none;)
+			4.在ie6及以下版本中,解析百分比的时候,会按照四舍五入的方法计算从而导致50%+50%>100%
+				hack:给右边浮动元素加上clear:right;
+			5.指针问题
+				cursor:wait/help/pointer都识别,hand只有ie识别
+			6.透明问题:
+				opacity:除了ie都可以
+				ie支持:filter:alpha(opacity=0.2)
+			*/
+		</style>
+		
+	</head>
+	<body>
+	
+		<div></div>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>伪类选择器</title>
+		<style>
+		/*hover和active可以用于其他标签*/
+			a:link{
+			color:yellow;
+			}
+			a:visited{
+			color:blue;
+			}
+			a:hover{
+			color:red;
+			}
+			a:active{
+			color:gray;
+			}
+			/**********************/
+			div{
+			height:50px;
+			width:50px;
+			background:red;
+			}
+			div:hover{
+			background:pink;
+			}
+			div:active{
+			background:balck;
+			}
+			div:first-child{
+			background:green;
+			}
+			/**********************/
+			
+		</style>
+	</head>
+	<body>
+		<a href="http://www.baidu.com">百度一下</a>
+		<a href="http://www.baidu.com">百度一下</a>
+		<a href="http://www.baidu.com">百度一下</a>
+		<a href="http://www.baidu.com">百度一下</a>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+</html>

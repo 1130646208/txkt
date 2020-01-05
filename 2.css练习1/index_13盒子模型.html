@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>盒子模型</title>
+		<style>
+		/*
+		盒子模型组成:外边距margin,边框border,内边距(内容和边框的距离)padding,内容content
+		如果保持盒子大小不变化,还想让内容与边框之间有一定距离,则需要重新计算盒子的宽和高
+		padding:10px;上下左右都是10px
+		padding:5px 6px;上下5左右6
+		padding:5px 6px 7px;上5左右6下7
+		padding:5px 6px 7px 8px;上5右6下7左8顺时针分配
+		给单一方向设置值:padding-top/left/bottom:20px;
+		总结:padding不会对背景图造成影响,主要控制子元素与父元素之间的距离.
+		padding添加在父元素上.
+		
+		*/
+		
+		*{margin:0;padding:0;}
+		.box{
+		width:260px;
+		height:260px;
+		background:pink;
+		border:5px solid red;
+		padding:5px 6px 7px 8px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="box"> 论道 | 腾讯光子技术美术负责人深度解读国内TA现状
+		共1节腾讯游戏学院免费 33人最近报名论道｜游戏项目经理的生存进阶之道
+		论道｜游戏项目经理的生存进阶之道共1节
+		腾讯游戏学院免费 8人最近报名
+		论道｜知乎27万粉腾讯技术总监Milo Yip：论游戏程序员的自我修养
+		论道｜知乎27万粉腾讯技术总监Milo Yip：论游戏程序员的自我修养
+		共1节腾讯游戏学院
+		免费 3人最近报名
+		</div>
+		
+	</body>
+</html>

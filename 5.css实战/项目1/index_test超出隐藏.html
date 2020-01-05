@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<!--
+	overflow:hidden超出隐藏,visible可见,scroll变成滚动条,auto自动决定是否有滚动条,inherit继承父级的
+	white-space:nowrap不换行,normal默认值,pre原样保留,pre-line合并空格,保留换行,pre-wrap保留空格,保持换行inherit继承父级
+	text-overflow:ellipsis省略号,clip裁剪(需要配合overflow:hidden,white-space: nowrap 使用)
+	-->
+	<meta charset="utf-8">
+	<title>超出隐藏,处理空白</title>
+	<style>
+		.box{
+		height:50px;
+		width:100px;
+		background:pink;
+		margin:200px auto;
+		white-space:nowrap;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		}
+	</style>
+</head>
+
+	<body>
+		<div class="box">我是超长文字我是超长文字我是超长文字我是超长文字
+		我是超长文字我是超长文字我是超长文字我是超长文字
+		我是超长文字我是超长文字我是超长文字我是超长文字
+		我是超长文字我是超长文字我是超长文字我是超长文字
+		</div>
+	</body>
+</html>

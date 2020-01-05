@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>背景属性,边框,按钮</title>
+		<style>
+		/*
+		background-image:url("image/baidu.png")填充背景图片
+		background-repeat:no-repeat不平铺repeat-x x轴平铺,repeat-y y轴平铺,repeat平铺
+		background-position:left bottom 左下,right top 右上.100px 200px 坐标:100,200
+			一般写法:(left center right 100px/-100px)+(top center bottom 100px/-100px)
+		背景简写风格:background url(图片地址) repeat
+		border:简写风格:5px double/dotted/dashed blue
+			border-top/border-bottom/border-left/border-right单独修饰一边
+			比如:border-bottom:5px solid blue
+		*/
+			div{
+			height:500px;
+			width:500px;
+			background-image:url("image/baidu.png");
+			background-repeat:no-repeat;
+			background-position:center bottom;
+			border:5px solid tomato;
+			border-bottom:5px solid blue;
+			font-weight:bold;
+			font-size:32px;
+			}
+			input{
+			font-size:16px
+			border:none;
+			-border-bottom:2px solid #F90;
+			}
+		</style>
+	</head>
+	<body>
+		<div>文字覆盖背景色
+		</div>
+		<input type="button" name="" value="按钮" />
+		
+	</body>
+</html>

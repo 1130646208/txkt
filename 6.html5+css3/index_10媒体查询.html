@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>媒体查询</title>
+		<style type='text/css'>
+		/*
+		语法1:
+		@media mediatype and|not|only (media feature){csscode;}
+		语法2:
+		<link rel='stylesheet' media='mediatype and|not|only (mediafeature)' href='mystylesheet.css'>
+		单位:rem:寻找根元素的属性大小
+		*/
+			body{height:100%;}
+			
+			@media screen and (min-width:1200px){
+				html{font-size:72px;}
+				h1{font-size:72px;}
+			}
+			@media screen and (min-width:800px) and (max-width:1200px){
+				html{font-size:48px;}
+				h1{font-size:50px;}
+			}
+			@media screen and (max-width:800px){
+				html{font-size:36px;}
+				h1{font-size:32px;}
+			}
+			h2{font-size:2rem;}
+			
+		</style>
+		
+	</head> 
+
+
+	<body>
+		<h1>FONT</h1>
+		<h2>H2</h2>
+	</body>
+</html>

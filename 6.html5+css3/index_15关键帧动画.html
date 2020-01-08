@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>关键帧动画</title>
+		<style type='text/css'>
+		/*
+			@keyframes animationname{
+					keyframe-selector{css-styles;}
+			}
+			属性:
+			animation 所有动画属性的简写,除了animation-play-state属性
+			animation-name:规定@keyframes动画名称
+			animation-duration:单位秒/毫秒默认是0.
+			animation-timing-function:
+			animation-delay:
+			animation-play-state:paused/running###在js中使用,可以暂停动画
+			animation-iteration-count:播放次数.infinite无限循环
+			animation-direction:alternate/normal
+				alternate:奇数次正常,偶数次倒放播放
+		*/
+			*{margin:0;padding:0;}
+			li{list-style:none;}
+			
+			.box1{
+			height:300px;
+			width:300px;
+			background:#ccc;
+			
+			animation-name:a;
+			animation-duration:2s;
+			animation-direction:alternate;
+			animation-iteration-count:infinite;
+			position:relative;
+			
+			}
+			
+			.box2{
+			height:300px;
+			width:300px;
+			background:#f90;
+			animation:b 5s ease infinite alternate;
+			position:relative;
+			}
+			
+			@keyframes a{
+				from {left:0;
+				top:0;}
+				
+				to{
+				left:200px;
+				top:300px;}	
+			}
+			
+			@keyframes b{
+				0% {left:0;top:0;}
+				25% {left:20px;top:0;background:#0f0;}
+				
+				75% {left:30px;top:50px;background:#ff0;}
+				100% {left:100px;top:90px;}
+			
+			}
+		</style>
+		
+	</head> 
+
+
+	<body>
+		<div class='box1'>
+			<ul>
+				<li></li>
+				
+			</ul>
+		</div>
+		<div class='box2'>
+			<ul>
+				<li></li>
+				
+			</ul>
+		</div>
+		
+	</body>
+</html>

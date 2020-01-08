@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>3D渐变</title>
+		<style type='text/css'>
+		/*3D位移主要包括两种函数
+			translateZ()和translate3D()
+			transform:向元素应用2D或3D转换
+			transform-origin:允许改变被转换元素位置
+				见index_14
+			transform-style:规定嵌套元素如何在3D空间中显示
+				transform-style:flat子元素不保留3d位置|preserve-3d子元素保留其3d位置
+				
+			
+			perspective:规定3D元素的透视效果
+				perspective:none没有真3d空间;取值越小3d效果越明显;取值无穷大或者为0与none效果一样
+			perspective-origin:规定3D元素底部位置
+				
+			backface-visibility:定义元素在不面对屏幕时是否可见
+				hidden看不见反面
+			
+		*/
+			*{margin:0;padding:0;}
+			li{list-style:none;}
+			.box1
+			{height:300px;
+			width:300px;
+			background:#ccc;
+			margin:100px auto;
+			position:relative;
+			
+			
+			perspective:800px;
+			perspective-origin:-100px -100px;
+			}
+			
+			.box1 ul{
+				width:200px;
+				height:200px;
+				border:1px #000 solid;
+				position:absolute;
+				left:0;
+				bottom:0;
+				right:0;
+				top:0;
+				margin:auto;
+				transform-style:preserve-3d;
+				transition:all 2s;
+				
+			}
+			
+			.box1 ul:hover{
+				transform:rotateX(360deg)  rotateY(360deg);
+				
+			}
+			
+			.box1 ul li{
+				text-align:center;
+				font-size:48px;
+				line-height:200px;
+				height:200px;
+				width:200px;
+				position:absolute;
+				
+				
+			}
+			
+			.box1 ul li:nth-child(1){
+				background:rgba(0,255,255,0.5);
+				transform:translateY(-100px) rotateX(90deg);
+			}
+			.box1 ul li:nth-child(2){
+				background:rgba(0,0,255,0.5);
+				transform:translateY(100px) rotateX(-90deg);
+				
+				backface-visibility:hidden;
+			}
+			.box1 ul li:nth-child(3){
+				background:rgba(0,255,0,0.5);
+				transform:translateX(-100px) rotateY(-90deg);
+			}
+			.box1 ul li:nth-child(4){
+				background:rgba(255,0,0,0.5);
+				transform:translateX(100px) rotateY(90deg);
+			}
+			.box1 ul li:nth-child(5){
+				background:rgba(255,0,255,0.5);
+				transform:translateZ(100px);
+			}
+			.box1 ul li:nth-child(6){
+				background:rgba(255,255,0,0.5);
+				transform:translateZ(-100px) rotateY(180deg);
+			}
+			
+		</style>
+		
+	</head> 
+
+
+	<body>
+		<div class='box1'>
+			<ul>
+				<li>上</li>
+				<li>下</li>
+				<li>左</li>
+				<li>右</li>
+				<li>前</li>
+				<li>后</li>
+			</ul>
+		</div>
+		
+	</body>
+</html>

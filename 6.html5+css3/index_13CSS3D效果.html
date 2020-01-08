@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>3D渐变</title>
+		<style type='text/css'>
+		/*3D位移主要包括两种函数
+			translateZ()和translate3D()
+			transform:向元素应用2D或3D转换
+			transform-origin:允许改变被转换元素位置
+				见index_14
+			transform-style:规定嵌套元素如何在3D空间中显示
+				transform-style:flat子元素不保留3d位置|preserve-3d子元素保留其3d位置
+			perspective:规定3D元素的透视效果
+				perspective:none没有真3d空间;取值越小3d效果越明显;取值无穷大或者为0与none效果一样
+			perspective-origin:规定3D元素底部位置
+			backface-visibility:定义元素在不面对屏幕时是否可见
+			
+		*/
+			div{
+			height:200px;
+			width:200px;
+			background:rgba(100,100,100,0.3);
+			margin:100px auto;
+			transform-style:preserve-3d;
+			perspective:300px;/*视觉点,可以选择在父元素或者子元素,有不同效果.800~1200~2000都可以*/
+			}
+			
+			p{
+			height:100px;
+			width:100px;
+			
+			background:rgba(200,10,10,0.5);
+			margin:50px;
+			transition:all 1s;
+			}
+
+			.box1 p:hover{
+			transform:rotateX(45deg);
+			}
+			.box2 p:hover{
+			transform:rotateZ(45deg) rotateX(45deg);
+			}
+			
+			
+		</style>
+		
+	</head> 
+
+
+	<body>
+		<div class='box1'><p></p></div>
+		<div class='box2'><p></p></div>
+		<div class='box3'><p></p></div>
+		<div class='box4'><p></p></div>
+		<div class='box5'><p></p></div>
+		<div class='box6'><p></p></div>
+	</body>
+</html>
